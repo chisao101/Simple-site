@@ -1,0 +1,276 @@
+:root {
+    --bg-color: rgba(240, 240, 240, .9);
+    --txt-color: rgba(9, 9, 9, 1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body {
+
+} */
+
+header {
+    background: var(--bg-color);
+    color: var(--txt-color);
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    padding: .5rem 1rem;
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+}
+
+.nav {
+    min-width: 50%;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--txt-color);
+    padding: 0px 20px;
+}
+
+.burger-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+
+.bar {
+    background: var(--txt-color);
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-section {
+    background-image: url('../img/man-on-cliff-optimized.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    color: rgba(240, 240, 240, 1);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy {
+    padding: 2rem;
+    color: #333;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.copy h2 {
+    font-size: 4rem;
+}
+
+.copy p {
+    font-size: 1.5rem;
+}
+
+.services-section h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 2rem;
+}
+
+.services-container {
+    background: #fff;
+    max-width: 1020px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: -2rem;
+    padding: 4rem;
+    box-shadow: 2px 2px 5px rgb(156, 156, 156);
+}
+
+.services-heading {
+    /* margin: 2rem; */
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.services-card {
+
+    padding: 1rem;
+    background: #e0f3ff;
+    display: flex;
+    border-bottom: 5px solid #8CBDE6;
+}
+
+.services-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.service-content {
+    padding: 1rem;
+}
+
+.about-section {
+    padding: 2rem;
+}
+
+.about-section h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 2rem;
+
+}
+
+.about-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.about-container img {
+    width: 100%;
+    
+}
+
+.about-content p {
+    padding: 1rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info address {
+    font-size: 1.3rem;
+    color: #8CBDE6;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+}
+
+.contact-info p {
+    font-size: 1.3rem;
+}
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 400px;
+    min-height: 300px;
+    padding: 2rem;
+}
+
+.contact-form input {
+    height: 3rem;
+    padding: .5rem;
+    border-radius: 6px;
+    border: none;
+    background: #f0f0f0;
+    border-bottom: 2px solid #8CBDE6;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+#form-submit {
+    background: orange;
+    border: none;
+    border-radius: 6px;
+    color: rgba(240, 240, 240, 1);
+    font-size: 1.3rem;
+    outline: none;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 680px) {
+    .nav {
+        width: 100%;
+        display: none;
+    }
+
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: 50vh;
+        padding: 2rem;
+    }
+
+    .nav ul li {
+        width: 100%;
+        margin: .5rem;
+    }
+
+    .burger-button {
+        display: flex;
+        margin-right: 1rem;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .services-card {
+        flex-wrap: wrap;
+        padding: .5rem;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+    }
+}
+
+@media (max-width: 1400px) {
+    .about-container {
+        flex-wrap: wrap;
+    }
+}
+
