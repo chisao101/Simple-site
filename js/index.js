@@ -8,3 +8,4 @@ navButton.addEventListener('click', () => {
     navMenu.classList.toggle('active')
 })
 
+// Additional functionality of the site goes here
