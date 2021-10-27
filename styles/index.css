@@ -229,6 +229,17 @@ label {
     margin-top: 2rem;
 }
 
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: #8CBDE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 1.3rem;
+}
+
 
 @media (max-width: 680px) {
     .nav {
