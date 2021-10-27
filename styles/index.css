@@ -121,7 +121,7 @@ header {
 
 .services-card {
 
-    padding: 1rem;
+    padding: 2rem;
     background: #e0f3ff;
     display: flex;
     border-bottom: 5px solid #8CBDE6;
@@ -131,11 +131,12 @@ header {
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    padding: 1rem;
+    /* padding: 1rem; */
+    box-shadow: 2px 2px 5px rgb(156, 156, 156);
 }
 
 .service-content {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .about-section {
@@ -272,7 +273,6 @@ footer {
 
     .services-card {
         flex-wrap: wrap;
-        padding: .5rem;
         justify-content: center;
         align-items: center;
         /* text-align: center; */
